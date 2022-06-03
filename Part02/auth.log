@@ -1,0 +1,240 @@
+May 16 09:10:11 virtualbox-01 polkitd(authority=local): Registered Authentication Agent for unix-session:c2 (system bus name :1.4418 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale ko_KR.UTF-8)
+May 16 09:13:10 virtualbox-01 gdm-password]: pam_unix(gdm-password:auth): authentication failure; logname= uid=0 euid=0 tty=/dev/tty1 ruser= rhost=  user=shkwon
+May 16 09:21:39 virtualbox-01 su: (to smmsp) root on none
+May 16 09:21:39 virtualbox-01 su: pam_unix(su:session): session opened for user smmsp by (uid=0)
+May 16 09:21:40 virtualbox-01 systemd: pam_unix(systemd-user:session): session opened for user smmsp by (uid=0)
+May 16 09:21:41 virtualbox-01 su: pam_unix(su:session): session closed for user smmsp
+May 16 09:22:12 virtualbox-01 useradd[2837]: failed adding user 'vboxadd', data deleted
+May 16 09:22:12 virtualbox-01 useradd[2838]: failed adding user 'vboxadd', data deleted
+116.168.10.9
+192.31.20.9
+10.10.16.9
+10.31.160.9
+192.168.68.194
+May 16 09:22:13 virtualbox-01 gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm by (uid=0)
+May 16 09:22:13 virtualbox-01 systemd: pam_unix(systemd-user:session): session opened for user gdm by (uid=0)
+May 16 09:22:30 virtualbox-01 polkitd(authority=local): Registered Authentication Agent for unix-session:c2 (system bus name :1.119 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale ko_KR.UTF-8)
+May 16 09:24:28 virtualbox-01 gdm-password]: gkr-pam: unable to locate daemon control file
+192.31.20.9
+10.10.16.9
+10.31.160.9
+May 16 09:24:28 virtualbox-01 gdm-password]: gkr-pam: stashed password to try later in open session
+May 16 09:24:28 virtualbox-01 gdm-password]: pam_unix(gdm-password:session): session opened for user shkwon by (uid=0)
+May 16 09:24:28 virtualbox-01 systemd: pam_unix(systemd-user:session): session opened for user shkwon by (uid=0)
+May 16 09:24:28 virtualbox-01 gdm-password]: gkr-pam: gnome-keyring-daemon started properly and unlocked keyring
+May 16 09:24:33 virtualbox-01 gnome-keyring-daemon[5131]: The PKCS#11 component was already initialized
+May 16 09:24:33 virtualbox-01 gnome-keyring-daemon[5131]: The Secret Service was already initialized
+May 16 09:24:37 virtualbox-01 polkitd(authority=local): Registered Authentication Agent for unix-session:3 (system bus name :1.190 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+May 16 09:24:44 virtualbox-01 gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+May 16 09:24:44 virtualbox-01 polkitd(authority=local): Unregistered Authentication Agent for unix-session:c2 (system bus name :1.119, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale ko_KR.UTF-8) (disconnected from bus)
+May 16 09:25:46 virtualbox-01 pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
+May 16 09:25:46 virtualbox-01 pkexec[6755]: shkwon: Executing command [USER=root] [TTY=unknown] [CWD=/home/shkwon] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+May 17 09:52:12 virtualbox-01 sudo:   shkwon : TTY=pts/0 ; PWD=/home/shkwon/Project/Go/Part01/Temp ; USER=root ; COMMAND=/usr/bin/apt install systemtap-sdt-dev
+May 17 09:52:12 virtualbox-01 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 17 09:52:12 virtualbox-01 sudo: pam_unix(sudo:session): session closed for user root
+May 17 09:52:26 virtualbox-01 sudo:   shkwon : TTY=pts/0 ; PWD=/home/shkwon/Project/Go/Part01/Temp ; USER=root ; COMMAND=/usr/bin/apt install systemtap-sdt-dev
+May 17 09:52:26 virtualbox-01 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 17 09:52:26 virtualbox-01 sudo: pam_unix(sudo:session): session closed for user root
+May 17 09:52:36 virtualbox-01 sudo:   shkwon : TTY=pts/0 ; PWD=/home/shkwon/Project/Go/Part01/Temp ; USER=root ; COMMAND=/usr/bin/dpkg --configure -a
+May 17 09:52:36 virtualbox-01 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 17 09:52:36 virtualbox-01 sudo: pam_unix(sudo:session): session closed for user root
+May 17 09:52:38 virtualbox-01 sudo:   shkwon : TTY=pts/0 ; PWD=/home/shkwon/Project/Go/Part01/Temp ; USER=root ; COMMAND=/usr/bin/apt install systemtap-sdt-dev
+May 17 09:52:38 virtualbox-01 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 17 09:53:10 virtualbox-01 sudo: pam_unix(sudo:session): session closed for user root
+May 17 09:55:11 virtualbox-01 pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
+May 17 09:55:11 virtualbox-01 pkexec[187691]: shkwon: Executing command [USER=root] [TTY=unknown] [CWD=/home/shkwon] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+May 17 09:55:46 virtualbox-01 polkitd(authority=local): Operator of unix-session:3 successfully authenticated as unix-user:shkwon to gain TEMPORARY authorization for action org.debian.apt.install-or-remove-packages for system-bus-name::1.1062 [/usr/bin/python3 /usr/bin/update-manager --no-update --no-focus-on-map] (owned by unix-user:shkwon)
+May 17 10:00:10 virtualbox-01 sshd[819]: Received signal 15; terminating.
+May 17 10:00:10 virtualbox-01 sshd[192506]: Server listening on 0.0.0.0 port 22.
+May 17 10:00:10 virtualbox-01 sshd[192506]: Server listening on :: port 22.
+May 17 10:04:10 virtualbox-01 pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
+May 17 10:04:10 virtualbox-01 pkexec[211189]: shkwon: Executing command [USER=root] [TTY=unknown] [CWD=/home/shkwon] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+May 17 10:09:03 virtualbox-01 sudo:   shkwon : TTY=pts/0 ; PWD=/home/shkwon/Project/Go/Part01 ; USER=root ; COMMAND=/usr/bin/dtrace -c go run unsafe.go
+May 17 10:09:03 virtualbox-01 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 17 10:09:03 virtualbox-01 sudo: pam_unix(sudo:session): session closed for user root
+May 17 10:09:19 virtualbox-01 sudo:   shkwon : TTY=pts/0 ; PWD=/home/shkwon/Project/Go/Part01 ; USER=root ; COMMAND=/usr/bin/dtrace -C go run unsafe.go
+May 17 10:09:19 virtualbox-01 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 17 10:09:19 virtualbox-01 sudo: pam_unix(sudo:session): session closed for user root
+May 17 10:37:23 virtualbox-01 sudo:   shkwon : TTY=pts/0 ; PWD=/home/shkwon/Project/Go/Part01 ; USER=root ; COMMAND=/usr/bin/apt-get remove systemtap-sdt-dev
+May 17 10:37:23 virtualbox-01 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 17 10:37:31 virtualbox-01 sudo: pam_unix(sudo:session): session closed for user root
+May 17 10:39:54 virtualbox-01 sudo:   shkwon : TTY=pts/0 ; PWD=/home/shkwon/Project/Go/Part01/Temp/linux ; USER=root ; COMMAND=/usr/bin/apt-get install flex bison make
+May 17 10:39:54 virtualbox-01 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 17 10:40:06 virtualbox-01 sudo: pam_unix(sudo:session): session closed for user root
+May 17 10:40:06 virtualbox-01 sudo:   shkwon : TTY=pts/0 ; PWD=/home/shkwon/Project/Go/Part01/Temp/linux ; USER=root ; COMMAND=/usr/bin/apt-get install libelf-dev
+May 17 10:40:06 virtualbox-01 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 17 10:40:10 virtualbox-01 pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
+May 17 10:40:10 virtualbox-01 pkexec[226087]: shkwon: Executing command [USER=root] [TTY=unknown] [CWD=/home/shkwon] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+May 17 10:40:15 virtualbox-01 sudo: pam_unix(sudo:session): session closed for user root
+May 17 10:40:15 virtualbox-01 sudo:   shkwon : TTY=pts/0 ; PWD=/home/shkwon/Project/Go/Part01/Temp/linux ; USER=root ; COMMAND=/usr/bin/apt-get install libc6-dev
+May 17 10:40:15 virtualbox-01 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 17 10:40:17 virtualbox-01 sudo: pam_unix(sudo:session): session closed for user root
+May 17 10:40:17 virtualbox-01 sudo:   shkwon : TTY=pts/0 ; PWD=/home/shkwon/Project/Go/Part01/Temp/linux ; USER=root ; COMMAND=/usr/bin/apt-get install binutils-dev zlib1g-dev elfutils libdwarf-dev libiberty-dev libelf-dev libc-dev zlib1g-dev linux-libc-dev linux-headers-5.13.0-40-generic
+May 17 10:40:17 virtualbox-01 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 17 10:40:32 virtualbox-01 sudo: pam_unix(sudo:session): session closed for user root
+May 17 10:40:32 virtualbox-01 sudo:   shkwon : TTY=pts/0 ; PWD=/home/shkwon/Project/Go/Part01/Temp/linux ; USER=root ; COMMAND=/usr/bin/apt-get install g++-multilib
+May 17 10:40:32 virtualbox-01 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 17 10:41:01 virtualbox-01 sudo: pam_unix(sudo:session): session closed for user root
+May 17 10:41:09 virtualbox-01 sudo:   shkwon : TTY=pts/0 ; PWD=/home/shkwon/Project/Go/Part01/Temp/linux ; USER=root ; COMMAND=build-5.13.0-40-generic/kcore
+May 17 10:41:09 virtualbox-01 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 17 10:41:09 virtualbox-01 sudo: pam_unix(sudo:session): session closed for user root
+May 17 10:41:09 virtualbox-01 sudo:   shkwon : TTY=pts/0 ; PWD=/home/shkwon/Project/Go/Part01/Temp/linux ; USER=root ; COMMAND=/usr/bin/grep -w rsp_scratch /proc/kallsyms
+May 17 10:41:09 virtualbox-01 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 17 10:41:09 virtualbox-01 sudo: pam_unix(sudo:session): session closed for user root
+May 17 10:41:23 virtualbox-01 sudo:   shkwon : TTY=pts/0 ; PWD=/home/shkwon/Project/Go/Part01/Temp/linux ; USER=root ; COMMAND=build-5.13.0-40-generic/kcore
+May 17 10:41:23 virtualbox-01 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 17 10:41:24 virtualbox-01 sudo: pam_unix(sudo:session): session closed for user root
+May 17 10:41:24 virtualbox-01 sudo:   shkwon : TTY=pts/0 ; PWD=/home/shkwon/Project/Go/Part01/Temp/linux ; USER=root ; COMMAND=/usr/bin/grep -w rsp_scratch /proc/kallsyms
+May 17 10:41:24 virtualbox-01 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 17 10:41:24 virtualbox-01 sudo: pam_unix(sudo:session): session closed for user root
+May 17 10:42:22 virtualbox-01 sudo:   shkwon : TTY=pts/0 ; PWD=/home/shkwon/Project/Go/Part01/Temp/dtrace ; USER=root ; COMMAND=/usr/bin/apt-get install flex bison make
+May 17 10:42:22 virtualbox-01 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 17 10:42:23 virtualbox-01 sudo: pam_unix(sudo:session): session closed for user root
+May 17 10:42:23 virtualbox-01 sudo:   shkwon : TTY=pts/0 ; PWD=/home/shkwon/Project/Go/Part01/Temp/dtrace ; USER=root ; COMMAND=/usr/bin/apt-get install libelf-dev
+May 17 10:42:23 virtualbox-01 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 17 10:42:24 virtualbox-01 sudo: pam_unix(sudo:session): session closed for user root
+May 17 10:42:24 virtualbox-01 sudo:   shkwon : TTY=pts/0 ; PWD=/home/shkwon/Project/Go/Part01/Temp/dtrace ; USER=root ; COMMAND=/usr/bin/apt-get install libc6-dev
+May 17 10:42:24 virtualbox-01 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 17 10:42:25 virtualbox-01 sudo: pam_unix(sudo:session): session closed for user root
+May 17 10:42:25 virtualbox-01 sudo:   shkwon : TTY=pts/0 ; PWD=/home/shkwon/Project/Go/Part01/Temp/dtrace ; USER=root ; COMMAND=/usr/bin/apt-get install binutils-dev zlib1g-dev elfutils libdwarf-dev libiberty-dev libelf-dev libc-dev zlib1g-dev linux-libc-dev linux-headers-5.13.0-40-generic
+May 17 10:42:25 virtualbox-01 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 17 10:42:26 virtualbox-01 sudo: pam_unix(sudo:session): session closed for user root
+May 17 10:42:26 virtualbox-01 sudo:   shkwon : TTY=pts/0 ; PWD=/home/shkwon/Project/Go/Part01/Temp/dtrace ; USER=root ; COMMAND=/usr/bin/apt-get install g++-multilib
+May 17 10:42:26 virtualbox-01 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 17 10:42:27 virtualbox-01 sudo: pam_unix(sudo:session): session closed for user root
+May 17 10:42:31 virtualbox-01 sudo:   shkwon : TTY=pts/0 ; PWD=/home/shkwon/Project/Go/Part01/Temp/dtrace ; USER=root ; COMMAND=build-5.13.0-40-generic/kcore
+May 17 10:42:31 virtualbox-01 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 17 10:42:31 virtualbox-01 sudo: pam_unix(sudo:session): session closed for user root
+May 17 10:42:31 virtualbox-01 sudo:   shkwon : TTY=pts/0 ; PWD=/home/shkwon/Project/Go/Part01/Temp/dtrace ; USER=root ; COMMAND=/usr/bin/grep -w rsp_scratch /proc/kallsyms
+May 17 10:42:31 virtualbox-01 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 17 10:42:31 virtualbox-01 sudo: pam_unix(sudo:session): session closed for user root
+May 17 10:43:09 virtualbox-01 pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
+May 17 10:43:09 virtualbox-01 pkexec[228942]: shkwon: Executing command [USER=root] [TTY=unknown] [CWD=/home/shkwon] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+May 17 10:45:05 virtualbox-01 sudo:   shkwon : TTY=pts/0 ; PWD=/home/shkwon/Project/Go/Part01/Temp ; USER=root ; COMMAND=/usr/bin/apt-get update
+May 17 10:45:05 virtualbox-01 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 17 10:45:57 virtualbox-01 sudo: pam_unix(sudo:session): session closed for user root
+May 17 10:46:09 virtualbox-01 pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
+May 17 10:46:09 virtualbox-01 pkexec[230661]: shkwon: Executing command [USER=root] [TTY=unknown] [CWD=/home/shkwon] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+May 17 10:46:20 virtualbox-01 sudo:   shkwon : TTY=pts/0 ; PWD=/home/shkwon/Project/Go/Part01/Temp ; USER=root ; COMMAND=/usr/bin/apt-get -y install bpftrace
+May 17 10:46:20 virtualbox-01 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 17 10:46:52 virtualbox-01 sudo: pam_unix(sudo:session): session closed for user root
+May 17 10:46:59 virtualbox-01 sudo:   shkwon : TTY=pts/0 ; PWD=/home/shkwon/Project/Go/Part01/Temp ; USER=root ; COMMAND=/usr/bin/apt-get autoremove
+May 17 10:46:59 virtualbox-01 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 17 10:47:16 virtualbox-01 sudo: pam_unix(sudo:session): session closed for user root
+May 17 10:49:11 virtualbox-01 pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
+May 17 10:49:11 virtualbox-01 pkexec[233246]: shkwon: Executing command [USER=root] [TTY=unknown] [CWD=/home/shkwon] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+May 17 10:51:16 virtualbox-01 sudo:   shkwon : TTY=pts/0 ; PWD=/home/shkwon/Project/Go/Part01/Temp ; USER=root ; COMMAND=/usr/bin/bpftrace -e kretprobe:sys_read /pid == 181/ { @bytes = hist(retval); }
+May 17 10:51:16 virtualbox-01 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 17 10:51:16 virtualbox-01 sudo: pam_unix(sudo:session): session closed for user root
+May 17 10:51:33 virtualbox-01 sudo:   shkwon : TTY=pts/0 ; PWD=/home/shkwon/Project/Go/Part01/Temp ; USER=root ; COMMAND=/usr/bin/bpftrace -e kretprobe:sys_read /pid == 7085/ { @bytes = hist(retval); }
+May 17 10:51:33 virtualbox-01 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 17 10:51:33 virtualbox-01 sudo: pam_unix(sudo:session): session closed for user root
+May 17 10:52:12 virtualbox-01 sudo:   shkwon : TTY=pts/0 ; PWD=/home/shkwon/Project/Go/Part01/Temp ; USER=root ; COMMAND=/usr/bin/bpftrace -e kretprobe:sys_read /pid == 5162/ { @bytes = hist(retval); }
+May 17 10:52:12 virtualbox-01 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 17 10:52:13 virtualbox-01 sudo: pam_unix(sudo:session): session closed for user root
+May 17 10:52:38 virtualbox-01 sudo:   shkwon : TTY=pts/0 ; PWD=/home/shkwon/Project/Go/Part01/Temp ; USER=root ; COMMAND=/usr/bin/bpftrace -e kretprobe:sys_read /pid == 234201/ { @bytes = hist(retval); }
+May 17 10:52:38 virtualbox-01 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 17 10:52:38 virtualbox-01 sudo: pam_unix(sudo:session): session closed for user root
+May 17 10:54:12 virtualbox-01 sudo:   shkwon : TTY=pts/2 ; PWD=/home/shkwon/Project ; USER=root ; COMMAND=/usr/bin/rm -rf fabric-samples/
+May 17 10:54:12 virtualbox-01 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 17 10:54:12 virtualbox-01 sudo: pam_unix(sudo:session): session closed for user root
+May 17 11:15:04 virtualbox-01 sudo:   shkwon : TTY=pts/0 ; PWD=/home/shkwon ; USER=root ; COMMAND=/usr/bin/kubeadm reset
+May 17 11:15:04 virtualbox-01 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 17 11:16:03 virtualbox-01 sudo: pam_unix(sudo:session): session closed for user root
+May 17 15:51:18 virtualbox-01 gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm by (uid=0)
+May 17 15:51:18 virtualbox-01 gdm-password]: pam_unix(gdm-password:session): session closed for user shkwon
+May 17 15:51:21 virtualbox-01 systemd: pam_unix(systemd-user:session): session opened for user gdm by (uid=0)
+May 17 15:51:24 virtualbox-01 polkitd(authority=local): Unregistered Authentication Agent for unix-session:3 (system bus name :1.190, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+May 17 21:59:41 virtualbox-01 polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.1351 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale ko_KR.UTF-8)
+May 18 09:00:31 virtualbox-01 gdm-password]: gkr-pam: unable to locate daemon control file
+May 18 09:00:31 virtualbox-01 gdm-password]: gkr-pam: stashed password to try later in open session
+May 18 09:00:31 virtualbox-01 gdm-password]: pam_unix(gdm-password:session): session opened for user shkwon by (uid=0)
+May 18 09:00:31 virtualbox-01 systemd: pam_unix(systemd-user:session): session opened for user shkwon by (uid=0)
+May 18 09:00:31 virtualbox-01 gdm-password]: gkr-pam: gnome-keyring-daemon started properly and unlocked keyring
+May 18 09:00:35 virtualbox-01 gnome-keyring-daemon[256120]: The Secret Service was already initialized
+May 18 09:00:35 virtualbox-01 gnome-keyring-daemon[256120]: The PKCS#11 component was already initialized
+May 18 09:00:38 virtualbox-01 polkitd(authority=local): Registered Authentication Agent for unix-session:75 (system bus name :1.1431 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+May 18 09:01:43 virtualbox-01 pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
+May 18 09:01:43 virtualbox-01 pkexec[257132]: shkwon: Executing command [USER=root] [TTY=unknown] [CWD=/home/shkwon] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+May 18 09:18:13 virtualbox-01 su: (to smmsp) root on none
+May 18 09:18:13 virtualbox-01 su: pam_unix(su:session): session opened for user smmsp by (uid=0)
+May 18 09:18:14 virtualbox-01 systemd: pam_unix(systemd-user:session): session opened for user smmsp by (uid=0)
+May 18 09:18:15 virtualbox-01 su: pam_unix(su:session): session closed for user smmsp
+May 18 09:18:26 virtualbox-01 systemd: pam_unix(systemd-user:session): session closed for user smmsp
+May 18 09:18:51 virtualbox-01 useradd[2003]: failed adding user 'vboxadd', data deleted
+May 18 09:18:51 virtualbox-01 useradd[2004]: failed adding user 'vboxadd', data deleted
+May 18 09:18:51 virtualbox-01 gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm by (uid=0)
+May 18 09:18:51 virtualbox-01 systemd: pam_unix(systemd-user:session): session opened for user gdm by (uid=0)
+May 18 09:18:56 virtualbox-01 polkitd(authority=local): Registered Authentication Agent for unix-session:c2 (system bus name :1.113 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale ko_KR.UTF-8)
+May 18 09:21:46 virtualbox-01 gdm-password]: gkr-pam: unable to locate daemon control file
+May 18 09:21:46 virtualbox-01 gdm-password]: gkr-pam: stashed password to try later in open session
+May 18 09:21:46 virtualbox-01 gdm-password]: pam_unix(gdm-password:session): session opened for user shkwon by (uid=0)
+May 18 09:21:46 virtualbox-01 systemd: pam_unix(systemd-user:session): session opened for user shkwon by (uid=0)
+May 18 09:21:46 virtualbox-01 gdm-password]: gkr-pam: gnome-keyring-daemon started properly and unlocked keyring
+May 18 09:21:50 virtualbox-01 gnome-keyring-daemon[2644]: The PKCS#11 component was already initialized
+May 18 09:21:50 virtualbox-01 gnome-keyring-daemon[2644]: The Secret Service was already initialized
+May 18 09:21:52 virtualbox-01 polkitd(authority=local): Registered Authentication Agent for unix-session:4 (system bus name :1.153 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+May 18 09:21:56 virtualbox-01 gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+May 18 09:21:56 virtualbox-01 polkitd(authority=local): Unregistered Authentication Agent for unix-session:c2 (system bus name :1.113, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale ko_KR.UTF-8) (disconnected from bus)
+May 18 09:22:07 virtualbox-01 systemd: pam_unix(systemd-user:session): session closed for user gdm
+May 18 09:22:57 virtualbox-01 pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
+May 18 09:22:57 virtualbox-01 pkexec[3326]: shkwon: Executing command [USER=root] [TTY=unknown] [CWD=/home/shkwon] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+May 18 10:20:05 virtualbox-01 gnome-keyring-daemon[2644]: asked to register item /org/freedesktop/secrets/collection/login/1, but it's already registered
+May 18 10:20:21 virtualbox-01 gnome-keyring-daemon[2644]: asked to register item /org/freedesktop/secrets/collection/login/1, but it's already registered
+May 18 10:21:27 virtualbox-01 sudo:   shkwon : TTY=pts/0 ; PWD=/home/shkwon/Downloads ; USER=root ; COMMAND=/usr/bin/rm -rf /usr/local/go
+May 18 10:21:27 virtualbox-01 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 18 10:21:28 virtualbox-01 sudo: pam_unix(sudo:session): session closed for user root
+May 18 10:21:28 virtualbox-01 sudo:   shkwon : TTY=pts/0 ; PWD=/home/shkwon/Downloads ; USER=root ; COMMAND=/usr/bin/tar -C /usr/local -xvf go1.18.2.linux-amd64.tar.gz
+May 18 10:21:28 virtualbox-01 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 18 10:21:40 virtualbox-01 sudo: pam_unix(sudo:session): session closed for user root
+May 18 16:44:42 virtualbox-01 gnome-keyring-daemon[2644]: asked to register item /org/freedesktop/secrets/collection/login/1, but it's already registered
+May 18 19:05:07 virtualbox-01 gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm by (uid=0)
+May 18 19:05:07 virtualbox-01 systemd: pam_unix(systemd-user:session): session opened for user gdm by (uid=0)
+May 18 19:05:07 virtualbox-01 gdm-password]: pam_unix(gdm-password:session): session closed for user shkwon
+May 18 19:05:12 virtualbox-01 polkitd(authority=local): Unregistered Authentication Agent for unix-session:4 (system bus name :1.153, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+May 18 19:05:17 virtualbox-01 polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.329 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale ko_KR.UTF-8)
+May 19 08:54:01 virtualbox-01 gdm-password]: gkr-pam: unable to locate daemon control file
+May 19 08:54:01 virtualbox-01 gdm-password]: gkr-pam: stashed password to try later in open session
+May 19 08:54:01 virtualbox-01 gdm-password]: pam_unix(gdm-password:session): session opened for user shkwon by (uid=0)
+May 19 08:54:01 virtualbox-01 systemd: pam_unix(systemd-user:session): session opened for user shkwon by (uid=0)
+May 19 08:54:01 virtualbox-01 gdm-password]: gkr-pam: gnome-keyring-daemon started properly and unlocked keyring
+May 19 08:54:04 virtualbox-01 gnome-keyring-daemon[47868]: The PKCS#11 component was already initialized
+May 19 08:54:04 virtualbox-01 gnome-keyring-daemon[47868]: The Secret Service was already initialized
+May 19 08:54:06 virtualbox-01 polkitd(authority=local): Registered Authentication Agent for unix-session:58 (system bus name :1.384 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+May 19 08:55:09 virtualbox-01 pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
+May 19 08:55:09 virtualbox-01 pkexec[48945]: shkwon: Executing command [USER=root] [TTY=unknown] [CWD=/home/shkwon] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+May 19 08:56:49 virtualbox-01 gnome-keyring-daemon[47868]: asked to register item /org/freedesktop/secrets/collection/login/1, but it's already registered
+May 19 12:04:34 virtualbox-01 gnome-keyring-daemon[47868]: asked to register item /org/freedesktop/secrets/collection/login/1, but it's already registered
+May 20 09:13:13 virtualbox-01 su: (to smmsp) root on none
+May 20 09:13:13 virtualbox-01 su: pam_unix(su:session): session opened for user smmsp by (uid=0)
+May 20 09:13:14 virtualbox-01 systemd: pam_unix(systemd-user:session): session opened for user smmsp by (uid=0)
+May 20 09:13:15 virtualbox-01 su: pam_unix(su:session): session closed for user smmsp
+May 20 09:13:25 virtualbox-01 systemd: pam_unix(systemd-user:session): session closed for user smmsp
+May 20 09:13:40 virtualbox-01 useradd[2009]: failed adding user 'vboxadd', data deleted
+May 20 09:13:40 virtualbox-01 useradd[2010]: failed adding user 'vboxadd', data deleted
+May 20 09:13:41 virtualbox-01 gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm by (uid=0)
+May 20 09:13:41 virtualbox-01 systemd: pam_unix(systemd-user:session): session opened for user gdm by (uid=0)
+May 20 09:13:46 virtualbox-01 polkitd(authority=local): Registered Authentication Agent for unix-session:c2 (system bus name :1.112 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale ko_KR.UTF-8)
+May 20 09:14:04 virtualbox-01 gdm-password]: gkr-pam: unable to locate daemon control file
+May 20 09:14:04 virtualbox-01 gdm-password]: gkr-pam: stashed password to try later in open session
+May 20 09:14:04 virtualbox-01 gdm-password]: pam_unix(gdm-password:session): session opened for user shkwon by (uid=0)
+May 20 09:14:04 virtualbox-01 systemd: pam_unix(systemd-user:session): session opened for user shkwon by (uid=0)
+May 20 09:14:04 virtualbox-01 gdm-password]: gkr-pam: gnome-keyring-daemon started properly and unlocked keyring
+May 20 09:14:08 virtualbox-01 gnome-keyring-daemon[2501]: The PKCS#11 component was already initialized
+May 20 09:14:08 virtualbox-01 gnome-keyring-daemon[2501]: The Secret Service was already initialized
+May 20 09:14:11 virtualbox-01 polkitd(authority=local): Registered Authentication Agent for unix-session:3 (system bus name :1.150 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+May 20 09:14:18 virtualbox-01 gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+May 20 09:14:18 virtualbox-01 polkitd(authority=local): Unregistered Authentication Agent for unix-session:c2 (system bus name :1.112, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale ko_KR.UTF-8) (disconnected from bus)
+May 20 09:14:32 virtualbox-01 systemd: pam_unix(systemd-user:session): session closed for user gdm
+May 20 09:15:20 virtualbox-01 pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
+May 20 09:15:20 virtualbox-01 pkexec[3560]: shkwon: Executing command [USER=root] [TTY=unknown] [CWD=/home/shkwon] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+May 20 12:21:04 virtualbox-01 gnome-keyring-daemon[2501]: asked to register item /org/freedesktop/secrets/collection/login/1, but it's already registered
+May 20 12:22:39 virtualbox-01 sudo:   shkwon : TTY=pts/1 ; PWD=/home/shkwon/Downloads ; USER=root ; COMMAND=/usr/bin/dpkg -i code_1.67.2-1652812855_amd64.deb
+May 20 12:22:39 virtualbox-01 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 20 12:23:07 virtualbox-01 sudo: pam_unix(sudo:session): session closed for user root
+May 20 12:36:21 virtualbox-01 pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
+May 20 12:36:21 virtualbox-01 pkexec[19253]: shkwon: Executing command [USER=root] [TTY=unknown] [CWD=/home/shkwon] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+May 20 17:29:02 virtualbox-01 pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
+May 20 17:29:02 virtualbox-01 pkexec[35779]: shkwon: Executing command [USER=root] [TTY=unknown] [CWD=/home/shkwon] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+May 21 15:28:22 virtualbox-01 pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
+May 21 15:28:22 virtualbox-01 pkexec[40827]: shkwon: Executing command [USER=root] [TTY=unknown] [CWD=/home/shkwon] [COMMAND=/usr/lib/update-notifier/package-system-locked]
