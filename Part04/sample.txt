@@ -1,0 +1,8 @@
+All the magic happens in the lineByLine() function. After making sure that you can open
+the given filename for reading, you create a new reader using bufio.NewReader(). Then,
+you use that reader with bufio.ReadString() in order to read the input file line by line.
+The trick is done by the parameter of bufio.ReadString(), which is a character that tells
+bufio.ReadString() to keep reading until that character is found. Constantly calling
+bufio.ReadString() when that parameter is the newline character results in reading the
+input file line by line. The use of fmt.Print() instead of fmt.Println() for printing the
+input line shows that the newline character is included in each input line.
