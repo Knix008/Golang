@@ -23,6 +23,9 @@ func add(c chan int) {
 func send(c chan int) {
 	for {
 		c <- rand.Intn(10)
+		//x := rand.Intn(10)
+		//c <- x
+		//fmt.Println(x)
 	}
 }
 
