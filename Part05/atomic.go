@@ -30,6 +30,8 @@ func main() {
 			defer waitGroup.Done()
 			for i := 0; i < Y; i++ {
 				atomic.AddInt64(&counter.val, 1)
+				// Regular arithmetic
+				//counter.val++
 			}
 		}(i)
 	}
