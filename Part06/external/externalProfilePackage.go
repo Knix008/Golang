@@ -31,7 +31,7 @@ func Multiply(a, b int) int {
 }
 
 func main() {
-	defer profile.Start(profile.ProfilePath("/tmp")).Stop()
+	defer profile.Start(profile.ProfilePath(".")).Stop()
 	//defer profile.Start(profile.MemProfile).Stop()
 	total := 0
 	for i := 2; i < 200000; i++ {
