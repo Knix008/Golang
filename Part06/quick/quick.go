@@ -11,6 +11,7 @@ func Add(x, y uint16) uint16 {
 	}
 	return y
 }
+
 func main() {
 	fmt.Println(Add(0, 0))
 }
