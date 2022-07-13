@@ -27,18 +27,21 @@ func timeHandler(w http.ResponseWriter, r *http.Request) {
 func getData(w http.ResponseWriter, r *http.Request) {
 	fmt.Printf("Serving: %s\n", r.URL.Path)
 	fmt.Printf("Served: %s\n", r.Host)
-	connStr := "user=postgres dbname=s2 sslmode=disable"
+
+	connStr := "user=postgres dbname=s2 password=12345 sslmode=disable"
 	db, err := sql.Open("postgres", connStr)
 	if err != nil {
 		fmt.Fprintf(w, "<h1 align=\"center\">%s</h1>", err)
 		return
 	}
+
 	rows, err := db.Query("SELECT * FROM users")
 	if err != nil {
 		fmt.Fprintf(w, "<h3 align=\"center\">%s</h3>\n", err)
 		return
 	}
 	defer rows.Close()
+
 	for rows.Next() {
 		var id int
 		var firstName string
@@ -48,9 +51,9 @@ func getData(w http.ResponseWriter, r *http.Request) {
 			fmt.Fprintf(w, "<h1 align=\"center\">%s</h1>\n", err)
 			return
 		}
-		fmt.Fprintf(w, "<h3 align=\"center\">%d, %s, %s</h3>\n", id,
-			firstName, lastName)
+		fmt.Fprintf(w, "<h3 align=\"center\">%d, %s, %s</h3>\n", id, firstName, lastName)
 	}
+
 	err = rows.Err()
 	if err != nil {
 		fmt.Fprintf(w, "<h1 align=\"center\">%s</h1>", err)
@@ -68,6 +71,7 @@ func main() {
 	http.HandleFunc("/time", timeHandler)
 	http.HandleFunc("/getdata", getData)
 	http.HandleFunc("/", myHandler)
+
 	err := http.ListenAndServe(PORT, nil)
 	if err != nil {
 		fmt.Println(err)
