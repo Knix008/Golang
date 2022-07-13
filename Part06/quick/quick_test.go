@@ -16,6 +16,7 @@ func TestWithSystem(t *testing.T) {
 		t.Errorf("Error: %v", err)
 	}
 }
+
 func TestWithItself(t *testing.T) {
 	condition := func(a, b uint16) bool {
 		return Add(a, b) == Add(b, a)
