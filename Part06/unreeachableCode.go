@@ -6,7 +6,7 @@ import (
 
 func f1() int {
 	fmt.Println("Entering f1()")
-	return -10
+	//return -10
 	// The unreachable code
 	fmt.Println("Exiting f1()")
 	return -1
@@ -16,6 +16,7 @@ func f2() int {
 	if true {
 		return 10
 	}
+	// The unreachable code not detected by compiler.
 	fmt.Println("Exiting f2()")
 	return 0
 }
