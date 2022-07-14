@@ -21,6 +21,7 @@ func benchmarkfibo2(b *testing.B, n int) {
 	}
 	result = r
 }
+
 func benchmarkfibo3(b *testing.B, n int) {
 	var r int
 	for i := 0; i < b.N; i++ {
