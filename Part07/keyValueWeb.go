@@ -15,7 +15,7 @@ type myElement struct {
 }
 
 var DATA = make(map[string]myElement)
-var DATAFILE = "/tmp/dataFile.gob"
+var DATAFILE = "dataFile.gob"
 
 func save() error {
 	fmt.Println("Saving", DATAFILE)
