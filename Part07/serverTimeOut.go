@@ -14,6 +14,7 @@ func myHandler(w http.ResponseWriter, r *http.Request) {
 
 func timeHandler(w http.ResponseWriter, r *http.Request) {
 	t := time.Now().Format(time.RFC1123)
+	//time.Sleep(3 * time.Second)
 	Body := "The current time is:"
 	fmt.Fprintf(w, "<h1 align=\"center\">%s</h1>", Body)
 	fmt.Fprintf(w, "<h2 align=\"center\">%s</h2>\n", t)
@@ -25,10 +26,10 @@ func main() {
 	PORT := ":8001"
 	arguments := os.Args
 	if len(arguments) == 1 {
-		fmt.Printf("Listening on http://0.0.0.0%s\n", PORT)
+		fmt.Printf("Listening on http://127.0.0.1%s\n", PORT)
 	} else {
 		PORT = ":" + arguments[1]
-		fmt.Printf("Listening on http://0.0.0.0%s\n", PORT)
+		fmt.Printf("Listening on http://127.0.0.1%s\n", PORT)
 	}
 	m := http.NewServeMux()
 	srv := &http.Server{
@@ -37,7 +38,6 @@ func main() {
 		ReadTimeout:  3 * time.Second,
 		WriteTimeout: 3 * time.Second,
 	}
-
 	m.HandleFunc("/time", timeHandler)
 	m.HandleFunc("/", myHandler)
 	err := srv.ListenAndServe()
