@@ -1,5 +1,7 @@
 syntax = "proto3";
 
+option go_package = "./";
+
 package message_service;
 
 message Request {
@@ -11,6 +13,7 @@ message Response {
   string text = 1;
   string subtext = 2;
 }
+
 service MessageService {
   rpc SayIt (Request) returns (Response);
 }
