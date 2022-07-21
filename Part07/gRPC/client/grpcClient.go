@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	p "message_service"
+	p "github.com/knix008/protobuf"
 
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
