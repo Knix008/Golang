@@ -22,3 +22,7 @@ go.work
 # Go module file
 go.mod
 go.sum
+
+# Any certificates
+server.crt
+server.key
