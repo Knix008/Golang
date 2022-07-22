@@ -17,7 +17,8 @@ func main() {
 	}
 	URL := os.Args[1]
 	tr := &http.Transport{
-		TLSClientConfig: &tls.Config{},
+		//TLSClientConfig: &tls.Config{},
+		TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
 	}
 	client := &http.Client{Transport: tr}
 	response, err := client.Get(URL)
