@@ -11,6 +11,7 @@ import (
 )
 
 func f(n int) int {
+	//fmt.Println("n : ", n)
 	fn := make(map[int]int)
 	for i := 0; i <= n; i++ {
 		var f int
@@ -21,6 +22,7 @@ func f(n int) int {
 		}
 		fn[i] = f
 	}
+	//fmt.Println("fibo: ", fn[n])
 	return fn[n]
 }
 
