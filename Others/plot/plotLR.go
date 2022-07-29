@@ -4,12 +4,13 @@ import (
 	"encoding/csv"
 	"flag"
 	"fmt"
-	"gonum.org/v1/plot"
-	"gonum.org/v1/plot/plotter"
-	"gonum.org/v1/plot/vg"
 	"image/color"
 	"os"
 	"strconv"
+
+	"gonum.org/v1/plot"
+	"gonum.org/v1/plot/plotter"
+	"gonum.org/v1/plot/vg"
 )
 
 type xy struct {
@@ -89,8 +90,8 @@ func main() {
 	line := plotter.NewFunction(func(x float64) float64 { return a*x + b })
 	line.Color = color.RGBA{B: 255, A: 255}
 
-	p, err := plot.New()
-	if err != nil {
+	p := plot.New()
+	if p == nil {
 		fmt.Println(err)
 		return
 	}
