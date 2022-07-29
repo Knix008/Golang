@@ -49,6 +49,7 @@ func main() {
 		defer data.Body.Close()
 		_, err := io.Copy(os.Stdout, data.Body)
 		if err != nil {
+			fmt.println("Error in copying body to stdout!!!")
 			fmt.Println(err)
 			return
 		}
